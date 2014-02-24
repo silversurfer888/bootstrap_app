@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BootstrapApp</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<header class="navbar">
+		<div class="navbar-inner">
+				<%= link_to "House Bunny", '#', id: "bunny" %>
+
+				<nav>
+					<ul class ="nav pull-right">
+						<li><%= link_to "Home", '#' %></li>
+						<li><%= link_to "Resume", '#' %></li>
+					</ul>
+				</nav>
+		</div>
+	</header>
+
+<%= yield %>
+
+</body>
+</html>
